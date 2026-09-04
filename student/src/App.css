@@ -1,0 +1,74 @@
+.profile-page {
+  min-height: 100svh;
+  padding: 72px 8vw;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f4f8f2 0%, #e7f0ed 100%);
+}
+
+.profile-header {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: #557c72;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.profile-header h1 {
+  margin: 0 0 16px;
+  color: #173b39;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+.profile-header > p:last-child {
+  color: #5c706d;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.student-card {
+  padding: 32px;
+  border: 1px solid rgba(85, 124, 114, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 40px rgba(44, 79, 71, 0.1);
+}
+
+.student-card h2 {
+  margin: 0 0 24px;
+  color: #173b39;
+  font-size: 1.6rem;
+}
+
+.student-card p {
+  padding: 14px 0;
+  border-top: 1px solid #dbe7e3;
+  color: #5c706d;
+}
+
+.student-card strong {
+  color: #315b53;
+}
+
+@media (max-width: 680px) {
+  .profile-page {
+    padding: 48px 20px;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+}
